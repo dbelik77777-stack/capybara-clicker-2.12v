@@ -1,0 +1,77 @@
+
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 400px;
+    height: 600px;
+    background: linear-gradient(180deg, rgb(84, 229, 0), rgb(119, 119, 184));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.capy1 {
+    height: 400px;
+}
+
+#tapArea{
+    position: relative;
+    overflow: hidden;
+}
+
+h5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+    animation: anim linear 3s normal;
+}
+
+
+@keyframes anim{
+    0%{
+        bottom: -100px;
+    }
+    100%{
+    bottom: 590px;
+    }
+}
+
+@media(max-width:390px){
+    .container{
+        background-color: rgb(255, 255, 255);
+        max-width: 340px;
+    }
+    .flex-item{
+        width: 100%;
+    }
+    .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title{
+text-align: center;
+    }
+
+  .container{
+        order: 1;
+    }
+
+    h3{
+        order: 2;
+    }
+
+    span{
+        order: 3;
+    }
+
+
+}
